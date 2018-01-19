@@ -1,0 +1,41 @@
+:root {
+    --bodyFont: 'Montserrat', sans-serif;
+    --bodyMaxWidth: 1240px;
+    --bodyBackgroundColor: #fff;
+    --borderRadius: 10px;
+    --borderRadiusButton: 4px;
+    --bodyTextColor: #000;
+    --bodyFontSize: 14px;
+    --bodyFontSizeSmall: 12px;
+    --primaryColor: #ED1C24;
+    --primaryColorDark: #00AEEF;
+    --secondaryColor: #0093C9;
+    --secondaryColorDark: #0093C9;
+    --invertColor: #fff;
+    --lightColor: #62D073;
+    --lightColorDark: #B2000E;
+    --linkColor: var(--primaryColor);
+    /*--boxShadow: 0 3px 6px rgba(0,0,0,0.16);*/
+    --inputBorderColor: var(--primaryColor);
+    --inputBackground: #F4F4F4;
+    --inputBackgroundFocus: rgba(3, 189, 177, 0.05);
+    --selectBorderColor: var(--primaryColor);
+    --headerBackgroundColor: #fff;
+    --headerHeight: 127px;
+    --productColums: 4;
+    --productGutter: 40px;
+    --productMargin: calc(var(--productGutter) / 2);
+    --productWidth: calc( (var(--bodyMaxWidth) - ( (var(--productGutter) * (var(--productColums) - 1) ))) / var(--productColums) );
+    --productBackgroundColor: #fff;
+    --h4FontSize: 12px;
+    --h3FontSize: 20px;
+    --h2FontSize: 20px;
+    --h4TextTransform: uppercase;
+    --h3TextTransform: uppercase;
+    --h2TextTransform: none;
+    --ctaColor: #15B200;
+    --ctaColorDark: #15B200;
+    --dangerColor: #B2000E;
+    --dangerColorDark: #B2000E;
+  }
+  
