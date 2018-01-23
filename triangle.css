@@ -1,0 +1,12 @@
+.my-account .nav>li>ul>li:hover:after {
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 30px 0 30px 15px;
+    border-color: transparent transparent transparent #ff6b88;
+    left: 100%;
+    top: 0;
+    content: " ";
+    position: absolute;
+    pointer-events: none;
+}
