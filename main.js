@@ -1,20 +1,21 @@
+$(".spoilers-group div .sidebarTaxonomyCollapse").on("click", function() {
+      let container = $(this).parent();
+      if (!container.hasClass("active")) {
+        container
+          .parent()
+          .find("div.active")
+          .each(function() {
+            let rest = $(this);
+            rest
+              .find(".Rectangle-14-Copy")
+              .slideUp(function() {
+                rest.removeClass("active");
+                container.find(".Rectangle-14-Copy").slideDown(function() {
+                  container.addClass("active");
+                });
+              });
+          });
 
-    var acc = document.getElementsByClassName("sidebarTaxonomyCollapse");
-    var i;
-    for (i = 0; i < acc.length; i++) {
-        acc[i].onclick = function(){
-            this.classList.toggle("active");
-            /* Toggle between hiding and showing the active panel */
-            var showPanel = this.nextElementSibling;
-            if (showPanel.style.display === "block") {
-                showPanel.style.display = "none";
-            } else {
-                showPanel.style.display = "block";
-            }
-            if (showPanel.style.maxHeight){
-                showPanel.style.maxHeight = null;
-            } else {
-                showPanel.style.maxHeight = showPanel.scrollHeight + "px";
-            }
-        }
-    }
+      }
+
+    });

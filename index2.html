@@ -13,8 +13,8 @@
 
 </head>
 <body>
-  <div class="accountBanner" style='margin-top: -66px;'>
-    <img src="http://zetprint.cz/bundles/k2pweb/img/zetprint/account_banner_profile.jpg" />
+  <div class="accountBanner">
+    <img src="banner2.jpg" />
     <div class="accountBannerTitle">
         <div class="titleBorder">Najčastejší dotazy</div>
         <div class="borderTitle"></div>
@@ -22,44 +22,42 @@
   </div>
   <div class="container">
     <div class="row">
-      <div class="container">
-        <div class="row">
-          <div class="bre"><strong>Homepage</strong>  »  Najčastejší dotazy</div>
-      </div>
-  </div>
+      {% block breadcrumbs %}
+            <div class="container">
+              {% include 'K2PWebBundle:Frontend:breadcrumbs.html.twig' %}
+            </div>
+      {% endblock %}
     </div>
   </div>
       <div class="container-fluid">
-        <div class="row">
-          <div class="Path-2-Copy-2">.</div>
-        </div>
+        <div class="Path-2-Copy-2"></div>
       </div>
   <div class="container">
-    <div class="row main_content1" style="margin: 66px 0;">
+    <div class="row main_content">
       <div class="col-md-3 my-account">
         <ul class="nav navLeft">
           <li>
             <ul class="nav nav-list menu_level_1">
-              <li style="width: 315px;">
-                <a href="#"><img src="http://zetprint.cz/bundles/k2pweb/img/zetprint/configuration-1.png" class="configuration-1">Konfigurácia produktu</a>
+              <li>
+                <a href="#"><img src="configuration-1.png" class="configuration-1">Konfigurácia produktu</a>
               </li>
-              <li style="width: 315px;">
-                <a href="#"><img src="http://zetprint.cz/bundles/k2pweb/img/zetprint/shopping-icon.png" class="shopping-icon">Použitie vlastného dizajnu</a>
+              <li>
+                <a href="#"><img src="shopping-icon.png" class="shopping-icon">Použitie vlastného dizajnu</a>
               </li>
-              <li style="width: 315px;">
-                <a href="#"><img src="http://zetprint.cz/bundles/k2pweb/img/zetprint/shopping-icon.png" class="shopping-icon">Vytvorenie v editore</a>
+              <li>
+                <a href="#"><img src="shopping-icon.png" class="shopping-icon">Vytvorenie v editore</a>
               </li>
-              <li style="width: 315px;">
-                <a href="#"><img src="http://zetprint.cz/bundles/k2pweb/img/zetprint/shopping-icon.png" class="shopping-icon">Moja objednávka</a>
+              <li>
+                <a href="#"><img src="shopping-icon.png" class="shopping-icon">Moja objednávka</a>
               </li>
-              <li style="width: 315px;">
-                <a href="#"><img src="http://zetprint.cz/bundles/k2pweb/img/zetprint/credit-card.png" class="credit-card">Platobné otázky</a>
+              <li>
+                <a href="#"><img src="credit-card.png" class="credit-card">Platobné otázky</a>
               </li>
-              <li style="width: 315px;">
-                <a href="#"><img src="http://zetprint.cz/bundles/k2pweb/img/zetprint/Page-11.png" class="Page-1">Doručovacie otázky</a>
+              <li>
+                <a href="#"><img src="Page-1.png" class="Page-1">Doručovacie otázky</a>
               </li>
-              <li style="width: 315px;">
-                <a href="#"><img src="http://zetprint.cz/bundles/k2pweb/img/zetprint/user-icon.png" class="user-icon">Tvoj účet</a>
+              <li>
+                <a href="#"><img src="user-icon.png" class="user-icon">Tvoj účet</a>
               </li>
             </ul>
           </li>
@@ -69,6 +67,12 @@
         <div class="cont active">
           <div class="Rectangle-14 sidebarTaxonomyCollapse">
             <p class="Ako-vybra-druh-papi">Ako vybrať druh papieru?</p>
+            <div class="e">
+              w
+            </div>
+            <div class="s">
+              a
+            </div>
           </div>
           <div class="Rectangle-14-Copy">
             <p class="Lorem-Ipsum-is-simpl">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
@@ -98,6 +102,25 @@
             <p class="Lorem-Ipsum-is-simpl">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
           </div>
         </div>
+
+            <!--<div class="Rectangle-14 sidebarTaxonomyCollapse">
+                <p class="Ako-vybra-druh-papi">Aký je rozdiel medzi ofsetovým a kriedovým papierom?</p>
+            </div>
+            <div class="Rectangle-14-Copy">
+              <p class="Lorem-Ipsum-is-simpl">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+            </div>
+            <div class="Rectangle-14 sidebarTaxonomyCollapse">
+                <p class="Ako-vybra-druh-papi">Ako správne zvoliť farebnosť tisku?</p>
+            </div>
+            <div class="Rectangle-14-Copy ">
+              <p class="Lorem-Ipsum-is-simpl">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+            </div>
+            <div class="Rectangle-14 sidebarTaxonomyCollapse">
+                <p class="Ako-vybra-druh-papi">Povrchové úpravy?</p>
+            </div>
+            <div class="Rectangle-14-Copy">
+              <p class="Lorem-Ipsum-is-simpl">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+            </div>-->
       </div>
     </div>
   </div>
